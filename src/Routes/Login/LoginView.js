@@ -6,7 +6,7 @@ const LoginView = () => {
     return (
         <div>
             로그인
-            <button onClick={() => {history.push('/')}}>
+            <button onClick={() => {window.location.href = '/'}}>
                 버어튼
             </button>
         </div>
