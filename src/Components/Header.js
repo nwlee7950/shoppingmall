@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Dropdown from "react-dropdown";
 import { Link } from "react-router-dom";
 import Login from "../Routes/Login";
 import Register from "../Routes/Register";
@@ -28,6 +29,27 @@ const ListItem = styled.li`
   float: left;
   margin-right: 20px;
 `;
+
+// const options = [
+//   { value: "one", label: "One" },
+//   { value: "two", label: "Two", className: "myOptionClassName" },
+//   {
+//     type: "group",
+//     name: "group1",
+//     items: [
+//       { value: "three", label: "Three", className: "myOptionClassName" },
+//       { value: "four", label: "Four" },
+//     ],
+//   },
+//   {
+//     type: "group",
+//     name: "group2",
+//     items: [
+//       { value: "five", label: "Five" },
+//       { value: "six", label: "Six" },
+//     ],
+//   },
+// ];
 
 const Header = () => {
   return (
