@@ -5,13 +5,13 @@ import styled from "styled-components";
 const Best30View = () => {
   return (
     <div>
-      로그인
+      베스트30
       <button
         onClick={() => {
           window.location.href = "/";
         }}
       >
-        버어튼
+        {/* 여기 리스트 만들어야됨 */}
       </button>
     </div>
   );
