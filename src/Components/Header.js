@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Login from "../Routes/Login";
 import Register from "../Routes/Register";
 import Logo from "../Images/Logo.png";
+import Best30 from "../Routes/Best30";
 
 const HeaderSpace = styled.header`
   width: 100%
@@ -56,7 +57,7 @@ const Header = () => {
     <HeaderSpace>
       <List>
         <ListItem>
-          <Link to="/login">BEST 30</Link>
+          <Link to="/best30">BEST 30</Link>
         </ListItem>
         <ListItem>
           <Link to="/login">SALE</Link>
