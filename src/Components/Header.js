@@ -60,25 +60,25 @@ const Header = () => {
           <Link to="/best30">BEST 30</Link>
         </ListItem>
         <ListItem>
-          <Link to="/login">SALE</Link>
+          <Link to="/sale">SALE</Link>
         </ListItem>
         <ListItem>
-          <Link to="/login">SHOP</Link>
+          <Link to="/shop">SHOP</Link>
         </ListItem>
         <ListItem>
-          <Link to="/login">LOOKBOOK</Link>
+          <Link to="/lookbook">LOOKBOOK</Link>
         </ListItem>
       </List>
       <HeaderLogo src={Logo}></HeaderLogo>
       <List>
         <ListItem>
-          <Link to="/login">COMMUNITY</Link>
+          <Link to="/community">COMMUNITY</Link>
         </ListItem>
         <ListItem>
-          <Link to="/login">ACCOUNT</Link>
+          <Link to="/account">ACCOUNT</Link>
         </ListItem>
         <ListItem>
-          <Link to="/login">CART</Link>
+          <Link to="/cart">CART</Link>
         </ListItem>
       </List>
     </HeaderSpace>
