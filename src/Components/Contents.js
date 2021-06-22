@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-const ContentsSpace = styled.div`
+export const ContentsSpace = styled.div`
   width: 100%;
   height: 5680px;
   display: flex;
+  background-color: #cabfb7;
 `;
 
 const LeftBox = styled.div`

@@ -12,6 +12,7 @@ const HeaderSpace = styled.header`
   height: 80px;
   display: flex;
   border-bottom: solid;
+  background-color: #cabfb7;
   justify-content: space-between;
 `;
 
@@ -69,7 +70,9 @@ const Header = () => {
           <Link to="/lookbook">LOOKBOOK</Link>
         </ListItem>
       </List>
-      <HeaderLogo src={Logo}></HeaderLogo>
+      <a href="/">
+        <HeaderLogo src={Logo}></HeaderLogo>
+      </a>
       <List>
         <ListItem>
           <Link to="/community">COMMUNITY</Link>
