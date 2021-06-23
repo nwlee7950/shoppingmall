@@ -9,11 +9,13 @@ import Best30 from "../Routes/Best30";
 
 const HeaderSpace = styled.header`
   width: 100%
-  height: 80px;
+  height: 100px;
   display: flex;
   border-bottom: solid;
   background-color: #cabfb7;
-  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  align-items: center;
 `;
 
 const HeaderLogo = styled.img`
@@ -22,14 +24,20 @@ const HeaderLogo = styled.img`
 `;
 
 const List = styled.ul`
-  list-style: none;
-  background-color: black;
+  width: 400px;
+  margin: 0 auto;
 `;
 
 const ListItem = styled.li`
-  background-color: green;
   float: left;
-  margin-right: 20px;
+  backgorund-color: red;
+  margin-right: 28px;
+  margin-top: 30px;
+  height: 25px;
+  font-size: 18px;
+  font-color: black;
+  font-weight: bold;
+  text-decoration: none;
 `;
 
 // const options = [
@@ -58,16 +66,27 @@ const Header = () => {
     <HeaderSpace>
       <List>
         <ListItem>
-          <Link to="/best30">BEST 30</Link>
+          <Link to="/best30" style={{ color: "black", textDecoration: "none" }}>
+            BEST 30
+          </Link>
         </ListItem>
         <ListItem>
-          <Link to="/sale">SALE</Link>
+          <Link to="/sale" style={{ color: "black", textDecoration: "none" }}>
+            SALE
+          </Link>
         </ListItem>
         <ListItem>
-          <Link to="/shop">SHOP</Link>
+          <Link to="/shop" style={{ color: "black", textDecoration: "none" }}>
+            SHOP
+          </Link>
         </ListItem>
         <ListItem>
-          <Link to="/lookbook">LOOKBOOK</Link>
+          <Link
+            to="/lookbook"
+            style={{ color: "black", textDecoration: "none" }}
+          >
+            LOOKBOOK
+          </Link>
         </ListItem>
       </List>
       <a href="/">
@@ -75,13 +94,25 @@ const Header = () => {
       </a>
       <List>
         <ListItem>
-          <Link to="/community">COMMUNITY</Link>
+          <Link
+            to="/community"
+            style={{ color: "black", textDecoration: "none" }}
+          >
+            COMMUNITY
+          </Link>
         </ListItem>
         <ListItem>
-          <Link to="/account">ACCOUNT</Link>
+          <Link
+            to="/account"
+            style={{ color: "black", textDecoration: "none" }}
+          >
+            ACCOUNT
+          </Link>
         </ListItem>
         <ListItem>
-          <Link to="/cart">CART</Link>
+          <Link to="/cart" style={{ color: "black", textDecoration: "none" }}>
+            CART
+          </Link>
         </ListItem>
       </List>
     </HeaderSpace>
