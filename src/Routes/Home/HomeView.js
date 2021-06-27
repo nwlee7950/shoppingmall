@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Header from "../../Components/Header";
+import Footer from "../../Components/Footer";
 import Contents, { ContentsSpace } from "../../Components/Contents";
 
 const HomeView = () => {
@@ -25,6 +26,7 @@ const HomeView = () => {
         </button> */}
         dd
       </ContentsSpace>
+      <Footer />
     </div>
   );
 };

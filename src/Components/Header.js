@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Dropdown from "react-dropdown";
 import { Link } from "react-router-dom";
-import Login from "../Routes/Login";
+import Login from "../Routes/Account/Login";
 import Register from "../Routes/Register";
 import Logo from "../Images/Logo.png";
 import Best30 from "../Routes/Best30";
@@ -30,7 +30,6 @@ const List = styled.ul`
 
 const ListItem = styled.li`
   float: left;
-  backgorund-color: red;
   margin-right: 28px;
   margin-top: 30px;
   height: 25px;
@@ -38,6 +37,37 @@ const ListItem = styled.li`
   font-color: black;
   font-weight: bold;
   text-decoration: none;
+`;
+
+const DropDownSpace = styled.div`
+  width: 80px;
+  height: 100px;
+  display: none;
+  background-color: #cabfb7;
+  border: solid;
+  cursor: Default;
+  &:hover {
+    display: flex;
+  }
+`;
+
+const DropDownUl = styled.ul`
+  margin: 0 auto;
+`;
+const DropDownLinkItem = styled.li`
+  &:hover {
+    color: grey;
+  }
+  cursor: Pointer;
+`;
+
+const DropDownLink = styled(Link)`
+  &:hover {
+    ${DropDownSpace} {
+      display: flex;
+      margin-top: 4px;
+    }
+  }
 `;
 
 const Header = () => {
@@ -81,12 +111,20 @@ const Header = () => {
           </Link>
         </ListItem>
         <ListItem>
-          <Link
+          <DropDownLink
             to="/account"
             style={{ color: "black", textDecoration: "none" }}
           >
             ACCOUNT
-          </Link>
+            <DropDownSpace>
+              <DropDownUl>
+                <DropDownLinkItem>
+                  <Link to="/login">Login</Link>
+                </DropDownLinkItem>
+                <DropDownLinkItem>Join</DropDownLinkItem>
+              </DropDownUl>
+            </DropDownSpace>
+          </DropDownLink>
         </ListItem>
         <ListItem>
           <Link to="/cart" style={{ color: "black", textDecoration: "none" }}>

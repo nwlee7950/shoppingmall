@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import Header from "../../Components/Header";
-import Contents, { ContentsSpace } from "../../Components/Contents";
+import Header from "../../../Components/Header";
+import Contents, { ContentsSpace } from "../../../Components/Contents";
 
 const InputField = styled.input`
   width: 400px;
