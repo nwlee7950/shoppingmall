@@ -4,11 +4,10 @@ import styled from "styled-components";
 import Header from "../../../Components/Header";
 import Contents, { ContentsSpace } from "../../../Components/Contents";
 
-const InputField = styled.input`
+export const InputField = styled.input`
   width: 400px;
   height: 40px;
 `;
-
 const LoginButton = styled.button`
   width: 400px;
   height: 30px;

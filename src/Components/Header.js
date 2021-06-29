@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Dropdown from "react-dropdown";
 import { Link } from "react-router-dom";
 import Login from "../Routes/Account/Login";
-import Register from "../Routes/Register";
+import Register from "../Routes/Account/Register";
 import Logo from "../Images/Logo.png";
 import Best30 from "../Routes/Best30";
 
@@ -119,9 +119,21 @@ const Header = () => {
             <DropDownSpace>
               <DropDownUl>
                 <DropDownLinkItem>
-                  <Link to="/login">Login</Link>
+                  <Link
+                    to="/login"
+                    style={{ color: "black", textDecoration: "none" }}
+                  >
+                    Login
+                  </Link>
                 </DropDownLinkItem>
-                <DropDownLinkItem>Join</DropDownLinkItem>
+                <DropDownLinkItem>
+                  <Link
+                    to="/register"
+                    style={{ color: "black", textDecoration: "none" }}
+                  >
+                    Register
+                  </Link>
+                </DropDownLinkItem>
               </DropDownUl>
             </DropDownSpace>
           </DropDownLink>

@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "../Routes/Home";
 import Login from "../Routes/Account/Login";
-import Register from "../Routes/Register";
+import Register from "../Routes/Account/Register";
 import Best30 from "../Routes/Best30";
 import Lookbook from "../Routes/Lookbook";
 import Sale from "../Routes/Sale";
